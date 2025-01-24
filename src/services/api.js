@@ -1,5 +1,5 @@
-//const BASE_URL = "https://transpectra-backend.onrender.com/api/v1"
-const BASE_URL="http://localhost:8080/api"
+const BASE_URL = "https://stock-portfolio-czp1.onrender.com/api"
+//const BASE_URL="http://localhost:8080/api"
 console.log("this is base url", BASE_URL);
 
 // AUTH ENDPOINTS
