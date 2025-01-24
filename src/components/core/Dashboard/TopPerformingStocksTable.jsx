@@ -22,7 +22,10 @@ const TopPerformingStocksTable = ({ stockDetails }) => {
   );
 
   // Ensure table has 5 rows, even if there are fewer stocks
-  const displayedStocks = [...sortedStocks, ...Array(5 - sortedStocks.length).fill(null)].slice(0, 5);
+  const displayedStocks =
+  sortedStocks.length < 5
+    ? [...sortedStocks, ...Array(5 - sortedStocks.length).fill(null)]
+    : sortedStocks.slice(0, 5);
 
   return (
     <div className="mt-7 w-2/3">
